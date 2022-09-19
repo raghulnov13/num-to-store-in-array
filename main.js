@@ -1,6 +1,6 @@
-let email = "ravanth39840@gmail.com";
+let email = "ravanth398406@gmail.com";
 
-let a = email.replace(/[^0-9]/g, "");
+let a = email.replace(/[^0-9]/g,"");
 console.log(a);
 let b =a.split("");
 console.log(b);

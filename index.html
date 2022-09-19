@@ -10,7 +10,7 @@
 
 <body>
 
-    Enter Numbers:<input type="number" id="num">
+    <!-- Enter Numbers:<input type="number" id="num">
     <button onclick="add()">Click to Add</button>
     <p id="display">Array :</p>
 
@@ -25,7 +25,21 @@
             document.getElementById("num").value ="";
             document.getElementById("display").innerHTML += result;
 
+        } -->
+    <input type="text" placeholder="Enter number" id="input">
+    <button id="btn">Click Here</button>
+    <p id="output :">Output</p>
+
+    <script>
+        var btn = document.getElementById("btn");
+         var emptyArr = [];
+        function getVal() {
+            const val = document.getElementById('input').value;
+           let c = val.toString();
+            emptyArr.push(c);
+            console.log(emptyArr);
         }
+        btn.addEventListener("click",getVal);
     </script>
     <script src="main.js"></script>
 </body>
