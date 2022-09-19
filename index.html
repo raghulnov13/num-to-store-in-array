@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Enter Numbers:<input type="number" id="num">
+    <button onclick="add()">Click to Add</button>
+    <p id="display">Array :</p>
+
+
+    <script>
+        var i = 0;
+        var result = Array();
+        function add() {
+            document.getElementById("display").innerHTML ="Array : ";
+            result[i] = document.getElementById("num").value;
+            i++;
+            document.getElementById("num").value ="";
+            document.getElementById("display").innerHTML += result;
+
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
